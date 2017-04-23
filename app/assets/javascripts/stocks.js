@@ -6,7 +6,7 @@ init_stock_lookup = function() {
     });
     
     $('#stock-lookup-form').on('ajax:after', function(event, data, status){
-       show_spinner();
+       hide_spinner();
     });
     
     $('#stock-lookup-form').on('ajax:success', function(event, data, status){
